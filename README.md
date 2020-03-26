@@ -8,7 +8,8 @@ After starting the server with
 
 <pre>sbt run</pre>
 
-you can run queries interactively using graphql-playground by opening http://localhost:8080 in a browser or query the /graphql endpoint directly. The HTTP endpoint follows GraphQL best practices for handling the HTTP requests.
+<p>you can run queries interactively using <a href="https://github.com/prisma/graphql-playground">graphql-playground</a> by opening <a href="http://localhost:8080" rel="nofollow">http://localhost:8080</a> in a browser or query the <code>/graphql</code> endpoint directly. The HTTP endpoint follows <a href="http://graphql.org/learn/serving-over-http/#http-methods-headers-and-body" rel="nofollow">GraphQL best practices for handling the HTTP requests</a>.</p>
+
 
 # Dependencies
 
