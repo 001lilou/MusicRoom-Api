@@ -12,7 +12,7 @@ you can run queries interactively using graphql-playground by opening http://loc
 
 # Dependencies
 
-Java 8+
+<li>Java 8+</li>
 
 Sbt
 
