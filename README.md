@@ -21,9 +21,9 @@ After starting the server with
 
 # mailhog
 
-<pre>Docker</pre>
+<li>Docker</li>
 
-docker run -p 8025:8025 -p 1025:1025 mailhog/mailhog
+<pre>docker run -p 8025:8025 -p 1025:1025 mailhog/mailhog</pre>
 
 # test
 
