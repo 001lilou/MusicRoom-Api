@@ -17,4 +17,5 @@ After starting the server with
 
 <li>Sbt</li>
 
-brew install sbt
+<pre>brew install sbt</pre>
+
