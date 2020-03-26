@@ -16,9 +16,9 @@ After starting the server with
 <li>Java 8+</li>
 
 <li>Sbt</li>
-
+<ul>
 <pre>brew install sbt</pre>
-
+</ul>
 # mailhog
 
 <li>Docker</li>
