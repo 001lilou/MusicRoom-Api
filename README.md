@@ -6,7 +6,7 @@ kroom-graphql-api Developped by Cyrill Epalle https://github.com/cepalle/kroom-g
 
 After starting the server with
 
-sbt run
+<pre>sbt run</pre>
 
 you can run queries interactively using graphql-playground by opening http://localhost:8080 in a browser or query the /graphql endpoint directly. The HTTP endpoint follows GraphQL best practices for handling the HTTP requests.
 
