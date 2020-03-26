@@ -4,29 +4,3 @@ It's kroom-graphql-api Developped by Cyrill Epalle https://github.com/cepalle/kr
 
 <a href="https://graphql.org" rel="nofollow">GraphQL</a> server written with <a href="https://github.com/akka/akka-http">akka-http</a>, <a href="https://github.com/circe/circe">circe</a> and <a href="https://github.com/sangria-graphql/sangria">sangria</a>.
 
-After starting the server with
-
-<pre>sbt run</pre>
-
-<p>you can run queries interactively using <a href="https://github.com/prisma/graphql-playground">graphql-playground</a> by opening <a href="http://localhost:8080" rel="nofollow">http://localhost:8080</a> in a browser or query the <code>/graphql</code> endpoint directly. The HTTP endpoint follows <a href="http://graphql.org/learn/serving-over-http/#http-methods-headers-and-body" rel="nofollow">GraphQL best practices for handling the HTTP requests</a>.</p>
-
-
-# Dependencies
-
-<ul><li>Java 8+</li>
-
-<li>Sbt</li></ul>
-
-<pre>brew install sbt</pre>
-
-# mailhog
-
-<ul><li>Docker</li></ul>
-
-<pre>docker run -p 8025:8025 -p 1025:1025 mailhog/mailhog</pre>
-
-# test
-
-<ul><li>Vegeta</li></ul>
-
-<pre>brew update && brew install vegeta</pre>
