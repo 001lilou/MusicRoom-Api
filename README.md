@@ -13,20 +13,20 @@ After starting the server with
 
 # Dependencies
 
-<li>Java 8+</li>
+<ul><li>Java 8+</li>
 
-<li>Sbt</li>
-<ul>
+<li>Sbt</li></ul>
+
 <pre>brew install sbt</pre>
-</ul>
+
 # mailhog
 
-<li>Docker</li>
+<ul><li>Docker</li></ul>
 
 <pre>docker run -p 8025:8025 -p 1025:1025 mailhog/mailhog</pre>
 
 # test
 
-<li>Vegeta</li>
+<ul><li>Vegeta</li></ul>
 
 <pre>brew update && brew install vegeta</pre>
