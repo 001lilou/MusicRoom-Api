@@ -1,0 +1,11 @@
+{
+  "name": "Kroom graphql-api",
+  "description": "An GraphQL server written with akka-http and sangria.",
+  "repository": "https://github.com/kroom-io/graphql-api",
+  "keywords": [
+    "scala",
+    "sangria",
+    "graphql",
+    "slick"
+  ]
+}

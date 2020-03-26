@@ -1,0 +1,63 @@
+#   log
+#   identification application server
+#       - plateforme (Android, iOS)
+#       - Device (iPhone 6G, iPad Air)
+#       - Applcation Version
+
+# SDK/API deezer
+# google API
+
+
+# Private, Amis, Public ?
+type User {
+    id: String!
+    name: String!
+    email: String!
+    friends: [User!]!
+    musicalPreferences: [DeezerGenre!]!
+    location: String
+}
+
+type TrackWithVote {
+    track: DeezerTrack
+    score: Int
+    nb_vote_up: Int
+    nb_vote_down: Int
+}
+
+interface TrackVoteEvent {
+    id: Int!
+    userIdMaster: Int
+    name: String!
+    public: Boolean!
+
+    currentTrack: DeezerTrack!
+    currentVotes: [TrackWithVote!]!
+
+    horaire: String
+    location: String
+
+    invited: [User!]
+}
+
+# Vote up and Down
+# a Master?
+
+type Query {
+    TrackVoteEventsPublic: [TrackVoteEvent!]!
+    TrackVoteEventById(id: String!): TrackVoteEvent!
+    # get private event that the user can go one.
+    TrackVoteEventByUserId(userId: String!): [TrackVoteEvent!]!
+}
+
+# Mutation
+type Mutation {
+    NewTrackVoteEvent(userIdMaster: Int, name: String, public: Boolean, horaire: String, location: String): TrackVoteEvent!
+
+    TrackVoteEventUpdate(name: String, public: Boolean, horaire: String, location: String): TrackVoteEvent!
+
+    TrackVoteEventAddUser(eventId: Int, userId: Int): TrackVoteEvent!
+    TrackVoteEventDelUser(eventId: Int, userId: Int): TrackVoteEvent!
+
+    TrackVoteEventVote(eventId: Int, musicId: Int, b:Boolean): TrackVoteEvent!
+}
